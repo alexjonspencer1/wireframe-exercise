@@ -5,6 +5,27 @@ img header-box {
 
 header {
     background: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: grey;
+    height: 90px;
+    margin-top: 30px;
+}
+
+nav {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.nav {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .grid-container {
@@ -35,3 +56,55 @@ header {
     grid-area: main3;
 }
 
+.grid-container-two {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: grid;
+    width: 960px;
+    /* grid-template-columns: 430px 510px; */
+    grid-template-rows: 400px;
+    grid-template-areas:
+        "image4 paragraph-grid"
+
+}
+
+.image-4 {
+    grid-area: image4;
+    margin-right: 15px
+}
+
+.paragraph-grid {
+    grid-area: paragraph-grid;
+    margin-left: 15px;
+    /* overflow: scroll; */
+    display: grid;
+    /* grid-template-rows: 50px 250px; */
+    grid-template-areas: "header" 
+        "paragraph" 
+        "button"
+}
+
+button {
+    background: black;
+    height: 30px;
+    width: 150px;
+    margin: 15px 15px 15px 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    grid-area: button;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: header;
+}
+
+.bob-ross-p {
+    grid-area: paragraph;
+    height: 330px;
+    overflow: scroll;
+}
