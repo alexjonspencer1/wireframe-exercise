@@ -23,6 +23,10 @@ nav {
     /* justify-content: space-between; */
 }
 
+nav a {
+    color: lightgray;
+}
+
 .nav {
     padding-left: 35px;
     padding-right: 35px;
